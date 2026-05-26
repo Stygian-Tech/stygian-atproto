@@ -1,14 +1,8 @@
-# stygian-atproto
+# atproto-auth-kit
 
-AT Protocol OAuth and DPoP utilities for Stygian gateway services.
+ATProto OAuth and DPoP foundations: RFC 9449 `htu` construction, forwarded HTTP headers, and repo scope helpers.
 
-## Modules
-
-- **DPoPHtu** — RFC 9449 `htu` canonicalization (extracted from GatewayCore)
-- **ForwardedHTTP** — reverse-proxy scheme inference
-- **OAuthScopes** — scope string helpers (stub)
-
-Depends on [stygian-core](../stygian-core) via local path.
+Depends on [atproto-primitives](../atproto-primitives).
 
 ## Development
 
@@ -19,4 +13,4 @@ scripts/check.sh
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT

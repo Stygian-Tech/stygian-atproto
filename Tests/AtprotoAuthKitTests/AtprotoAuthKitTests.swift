@@ -1,4 +1,4 @@
-@testable import StygianAtproto
+@testable import AtprotoAuthKit
 import HTTPTypes
 import Hummingbird
 import NIOCore

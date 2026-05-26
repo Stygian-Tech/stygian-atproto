@@ -2,42 +2,42 @@
 import PackageDescription
 
 let package = Package(
-  name: "stygian-atproto",
+  name: "atproto-auth-kit",
   platforms: [
     .macOS(.v14),
   ],
   products: [
-    .library(name: "StygianAtproto", targets: ["StygianAtproto"]),
+    .library(name: "AtprotoAuthKit", targets: ["AtprotoAuthKit"]),
   ],
   dependencies: [
-    .package(path: "../stygian-core"),
+    .package(path: "../atproto-primitives"),
     .package(url: "https://github.com/hummingbird-project/hummingbird.git", from: "2.6.0"),
     .package(url: "https://github.com/apple/swift-http-types.git", from: "1.3.0"),
     .package(url: "https://github.com/apple/swift-nio.git", from: "2.65.0"),
   ],
   targets: [
     .target(
-      name: "StygianAtproto",
+      name: "AtprotoAuthKit",
       dependencies: [
-        .product(name: "StygianCore", package: "stygian-core"),
+        .product(name: "AtprotoPrimitives", package: "atproto-primitives"),
         .product(name: "Hummingbird", package: "hummingbird"),
         .product(name: "HTTPTypes", package: "swift-http-types"),
         .product(name: "NIOCore", package: "swift-nio"),
       ],
-      path: "Sources/StygianAtproto",
+      path: "Sources/AtprotoAuthKit",
       swiftSettings: [
         .swiftLanguageMode(.v6),
       ]
     ),
     .testTarget(
-      name: "StygianAtprotoTests",
+      name: "AtprotoAuthKitTests",
       dependencies: [
-        "StygianAtproto",
+        "AtprotoAuthKit",
         .product(name: "Hummingbird", package: "hummingbird"),
         .product(name: "HTTPTypes", package: "swift-http-types"),
         .product(name: "NIOCore", package: "swift-nio"),
       ],
-      path: "Tests/StygianAtprotoTests",
+      path: "Tests/AtprotoAuthKitTests",
       swiftSettings: [
         .swiftLanguageMode(.v6),
       ]
