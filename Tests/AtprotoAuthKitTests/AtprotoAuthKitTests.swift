@@ -1,4 +1,4 @@
-@testable import AtprotoAuthKit
+@testable import ATProtoAuthKit
 import HTTPTypes
 import Hummingbird
 import NIOCore

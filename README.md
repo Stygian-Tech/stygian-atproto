@@ -2,7 +2,9 @@
 
 ATProto OAuth and DPoP foundations: RFC 9449 `htu` construction, forwarded HTTP headers, and repo scope helpers.
 
-Depends on [atproto-primitives](../atproto-primitives).
+Swift product: **`ATProtoAuthKit`**
+
+Depends on [atproto-primitive-kit](../atproto-primitive-kit).
 
 ## Development
 
