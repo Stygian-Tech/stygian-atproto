@@ -10,7 +10,7 @@ let package = Package(
     .library(name: "ATProtoAuthKit", targets: ["ATProtoAuthKit"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/Stygian-Tech/atproto-primitive-kit.git", branch: "main"),
+    .package(url: "https://github.com/Stygian-Tech/atproto-primitive-kit.git", revision: "1105fb3c008a1048c40b9d1b71cc2cc8e51319b0"),
     .package(url: "https://github.com/hummingbird-project/hummingbird.git", from: "2.6.0"),
     .package(url: "https://github.com/apple/swift-http-types.git", from: "1.3.0"),
     .package(url: "https://github.com/apple/swift-nio.git", from: "2.65.0"),
